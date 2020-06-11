@@ -1,0 +1,43 @@
+Kubernetes : gerer un ensemble de docker, gerer cycle de vie, port, adresse ip
+
+Google Cloud Platform Clusters Kubernetes
+
+Front : Angular (POD)
+Back : Java (POD)
+BDD : Postgres (POD)
+
+Sur kebernetes, il y a des noeuds, dans le noeud il y a des PODS
+
+NODE {
+	PODS1 :
+		docker1
+		docker2
+	PODS2 :
+		docker3
+		docker4
+}
+
+Déploiement : Kebernetes plusioeurs objet 
+- Service 
+- Déployment (lancer application)
+- node
+- pod
+- ingress
+
+Base postgreSQL, 3 spring (java), ingress -> redirection vers un service prédéfini
+
+postgres-configmap.yml
+
+kubectl get configmap
+
+kubectl describe configmap postgres-config
+renvoie les données du fichier 
+
+créer un volume pour persiste les données dans la bdd 
+
+clusterip : application accessible que depuis le cluster, pas depuis l'ext
+
+
+Spring = copie
+
+Google donne certificats 
